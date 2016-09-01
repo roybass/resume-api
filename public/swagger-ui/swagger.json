@@ -1,0 +1,182 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "The Roy Bass API",
+        "description": "Resume in API format. Implemented using Swagger & NodeJS. **http://github.com/roybass/resume-api/**"
+    },
+    "paths": {
+        "/personal/info": {
+            "get": {
+                "tags": [
+                    "Personal"
+                ],
+                "description": "Gets Roy's perosnal info.\n",
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "$ref": "#/definitions/PersonalInfo"
+                        }
+                    }
+                }
+            }
+        },
+        "/personal/hobby": {
+            "get": {
+                "tags": [
+                    "Personal"
+                ],
+                "description": "Returns array of hobbies",
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "$ref": "#/definitions/Hobbies"
+                        }
+                    }
+                }
+            }
+        },
+        "/career/experience/{id}": {
+            "get": {
+                "tags": [
+                    "Career"
+                ],
+                "description": "Returns a single Experience item",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int64",
+                        "in": "path"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "$ref": "#/definitions/Experience"
+                        }
+                    }
+                }
+            }
+        },
+        "/career/experience": {
+            "get": {
+                "tags": [
+                    "Career"
+                ],
+                "description": "Returns all experience items",
+                "responses": {
+                    "200": {
+                        "description": "Successful response",
+                        "schema": {
+                            "$ref": "#/definitions/Experiences"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "PersonalInfo": {
+            "description": "Personal Information Object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Full name"
+                },
+                "age": {
+                    "type": "integer",
+                    "description": "Age, in years."
+                },
+                "coutry": {
+                    "type": "string",
+                    "description": "Country of residence"
+                },
+                "languages": {
+                    "type": "array",
+                    "description": "Spoken languages",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "about": {
+                    "type": "string",
+                    "description": "A personal description of self"
+                }
+            }
+        },
+        "Hobby": {
+            "description": "Describes a single hobby",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Hobby name"
+                },
+                "note": {
+                    "type": "string",
+                    "description": "Personal note about the hobby"
+                }
+            }
+        },
+        "Hobbies": {
+            "description": "Collection of Hobby objects",
+            "properties": {
+                "hobbies": {
+                    "type": "array",
+                    "description": "Array of hobbies",
+                    "items": {
+                        "$ref": "#/definitions/Hobby"
+                    }
+                }
+            }
+        },
+        "Experiences": {
+            "description": "Collection of Experience objects",
+            "properties": {
+                "experiences": {
+                    "type": "array",
+                    "description": "Array of Experience",
+                    "items": {
+                        "$ref": "#/definitions/Experience"
+                    }
+                }
+            }
+        },
+        "Experience": {
+            "description": "Describes a single experience item",
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "description": "Id",
+                    "format": "int64"
+                },
+                "company": {
+                    "type": "string",
+                    "description": "Company name"
+                },
+                "from": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "Start date"
+                },
+                "to": {
+                    "type": "string",
+                    "format": "date",
+                    "description": "End date"
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Title / Role"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Experience description"
+                }
+            }
+        }
+    }
+}
