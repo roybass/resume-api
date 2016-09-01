@@ -33,7 +33,7 @@ var PersonalController = {
 				{
 					name: "Electric Guitar",
 					note: "I wish I had more time to play my guitar"
-				}
+				},
 				{
 					name: 'Model Kits',
 					note: 'Military models, when time allows it...'
