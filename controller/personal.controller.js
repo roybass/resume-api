@@ -31,6 +31,10 @@ var PersonalController = {
 					note: 'Some of favourites: FIFA, Last Of Us'
 				},
 				{
+					name: "Electric Guitar",
+					note: "I wish I had more time to play my guitar"
+				}
+				{
 					name: 'Model Kits',
 					note: 'Military models, when time allows it...'
 				}
