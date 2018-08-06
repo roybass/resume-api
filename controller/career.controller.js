@@ -37,7 +37,15 @@ const EXPERIENCE = [
 		from: '2014-06',
 		role: '"Sphere" Group Leader',
 		description: 'Building a group of multi-disciplinary engineers. Working with TLs on recruiting & training. Hands on development of a strategic project around consumer software.'
+	},
+	{
+		id: 6,
+		company: 'Outbrain',
+		from: '2018-02',
+		role: '"Engage" Group Leader',
+		description: 'Leading the development of several teams working on Outbrain core products'
 	}
+	
 ]
 
 var CareerController = {
