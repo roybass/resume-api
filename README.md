@@ -2,3 +2,5 @@
 
 NodeJS server, with Express default scaffolding.
 Almost all data is static, so there's not much to look at...
+
+Deploys from heroku to roybass.co.il
