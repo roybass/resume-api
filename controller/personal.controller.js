@@ -27,16 +27,16 @@ var PersonalController = {
 					note: 'RPGs, Adventure , Shooters, Puzzles.  Some of my favourites: Portal, The Witcher, Mass Effect'
 				},
 				{
-					name: 'PS4 Gaming',
-					note: 'Some of favourites: FIFA, Last Of Us'
+					name: 'PS Gaming',
+					note: 'Some of favourites: Last Of Us, God of War, Elden Ring'
 				},
 				{
 					name: "Electric Guitar",
 					note: "I wish I had more time to play my guitar"
 				},
 				{
-					name: 'Model Kits',
-					note: 'Military models, when time allows it...'
+					name: 'Surfing',
+					note: 'Amateur surfer.  I love the beach, but why so early...'
 				}
 			]
 		};

@@ -44,7 +44,22 @@ const EXPERIENCE = [
 		from: '2018-02',
 		role: '"Engage" Group Leader',
 		description: 'Leading the development of several teams working on Outbrain core products'
-	}
+	},
+	{
+		id: 7,
+		company: 'Outbrain',
+		from: '2020-08',
+		role: '"DataX" Group Leader',
+		description: `Leading a group of talented data engineers to re-build Outbrain's core data flows`
+	},
+	{
+		id: 8,
+		company: 'Outbrain',
+		from: '2022-04',
+		role: 'VP Analytics Engineering',
+		description: `Leading the company's analytics engineering team, responsible for cross organization data products.`
+	},
+	
 	
 ]
 
